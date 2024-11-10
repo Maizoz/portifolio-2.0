@@ -1,7 +1,7 @@
 :root{
 
 }
-
+/* ==================== Header-bar =============================== */
 .header-bar{
     background-color: rgba(72, 5, 188, 1);
     padding: 10px;
@@ -16,8 +16,35 @@
     height: 70px;
     }
 
-.titulo {
-    position: relative;
-    left: 90px;
-}
-    
+    .titulo {
+        position: relative;
+        left: 5.5rem;
+        font-size: 42px;
+    }
+    .menu {
+        position: relative;
+        display: flex;
+        gap: 3rem;
+        font-size: 28px;
+        left: 44rem;
+        bottom: 1rem;
+        cursor: pointer;
+    }
+
+    /* =============== language ====================== */
+    #language {
+        position: relative;
+        display: flex;
+    }
+    .arrow {
+        position: relative;
+        display: flex;
+        right:-10rem;
+        bottom: 1rem;
+        cursor: pointer;
+    }
+    .dropdown-content {
+        position: relative;
+        right: 48rem;
+
+    }
