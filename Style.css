@@ -3,7 +3,7 @@
 }
 /* ==================== Header-bar =============================== */
 .header-bar{
-    background-color: rgba(72, 5, 188, 1);
+    background-color: rgb(98, 69, 150);
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -22,29 +22,150 @@
         font-size: 42px;
     }
     .menu {
-        position: relative;
+        position: absolute;
         display: flex;
         gap: 3rem;
+        left: 65rem;
+        bottom: 1.6rem;
+    }
+    
+    .menu p {
+        position: relative;
+        margin: 0;
+        padding: 0;
         font-size: 28px;
-        left: 44rem;
-        bottom: 1rem;
         cursor: pointer;
     }
+    .menu p::before {
+        content: '';
+        position: absolute;
+        background-color: black;
+        height: 2px;
+        width: 30px;
+        bottom: 0px;
+        transition: all .6s ease;
+    }
+    .menu p:hover::before{
+        cursor: pointer;
+        width:  100%;
+        transition: all .6s ease;
+    }
+    /* ====================body======================= */
+    body{  
+        width: 100%;
+        height: 100%;
+        background-color: #111111;
+        background-image: linear-gradient(
+          32deg,
+          rgba(8, 8, 8, 0.74) 30px,
+          transparent
+        );
+        background-size: 60px 60px;
+        background-position: -5px -5px;
 
+        padding-top: 150px;
+    }
+    .about{
+        background-color: rgb(58, 55, 55);
+    }
+    .card {
+    
+
+    }
+    
+      
     /* =============== language ====================== */
     #language {
         position: relative;
         display: flex;
     }
-    .arrow {
-        position: relative;
+    #lang {
+        position: absolute;
         display: flex;
-        right:-10rem;
-        bottom: 1rem;
-        cursor: pointer;
+        right: 61.2rem;
+        bottom: 2.8rem;
+        font-size: 20px;
+        cursor: auto;
     }
+    .arrow {
+        position: absolute;
+        display: flex;
+        right: 60rem;
+        bottom: 3rem;
+        cursor: pointer;
+        width: 0;
+        height: 0;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        border-left: 12px solid black;
+        transition: transform 0.3s;
+    }
+    
+    .arrow.rotate {
+        transform: rotate(90deg);
+    }
+    
     .dropdown-content {
-        position: relative;
-        right: 48rem;
+        position: absolute;
+        right: 58.5rem;
+        top: 2rem;
+        display: none; 
+        list-style-type: none;
+        margin: 5px 0 0 0;
+        padding: 0;
+    }
 
+    
+    .dropdown-content.show { 
+        display: block; 
+    }
+    
+    .dropdown-content li {
+        margin: 0;
+        padding: 0;
+    }
+    /* =========== media ======================================== */
+    @media (max-width: 768px) {
+        .header-bar {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px 1rem;
+            height: auto;
+        }
+    
+        .titulo {
+            font-size: 1.8rem;
+            margin-left: 0;
+        }
+    
+        .menu {
+            gap: 1.5rem;
+            margin-top: 10px;
+            justify-content: center;
+            width: 100%;
+        }
+        .menu p{
+            gap: 1.5rem;
+            margin-top: 10px;
+            justify-content: center;
+            width: 100%;
+        }
+    
+        #language {
+            margin-top: 10px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .titulo {
+            font-size: 1.6rem;
+        }
+    
+        .menu p {
+            font-size: 1rem;
+        }
+    
+        #lang {
+            font-size: 0.9rem;
+        }
     }
