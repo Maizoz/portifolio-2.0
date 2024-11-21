@@ -5,39 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Remover o SCSS -->
 </head>
-<header class="header-bar">
-    <h1 class="titulo">Portifolio</h1>
-    <div>
-    <div id="language"></div>
-    <span class="arrow"></span>
-    <nav id="lang">Language</nav>
-    <ul class="dropdown-content">
-        <li>PT</li>
-        <li>EN</li>
-    </div>
-    <div class="menu">
-        <p>Inicio</p>
-        <p>Sobre</p>
-        <p>Projetos</p>
-        <p>Habilidades</p>
-        <p>Contato</p>
-    </div>
-    
-
-</header>
-     <script src="main.js"></script>
 <body>
-    <section class="about">
-        <div class="card">
-
+    <header class="header-bar">
+        <h1 class="titulo">Portifolio</h1>
+        <div>
+            <div id="language"></div>
+            <span class="arrow"></span>
+            <nav id="lang">Language</nav>
+            <ul class="dropdown-content">
+                <li>PT</li>
+                <li>EN</li>
+            </ul> <!-- Fechei a tag <ul> -->
         </div>
-        
-        
-    
-    
+        <div class="menu">
+            <p>Inicio</p>
+            <p>Sobre</p>
+            <p>Projetos</p>
+            <p>Habilidades</p>
+            <p>Contato</p>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="blog-card">
+            <div class="meta">
+                <div class="photo"><img src="imgs/Screenshot_2.png" alt="Imagem de exemplo"></div> <!-- Atribuí um alt descritivo -->
+                <ul class="details">
+                    <li class="author"><a href="#">Matheus Munhoz</a></li>
+                    <li class="date">dez. 13. 2000</li>
+                    <li class="tags">
+
+            </div>
+            <div class="description">
+                <h1>Learning to Code</h1>
+                <h2>Opening a door to the future</h2>
+                <p>Sou apaixonado por desenvolvimento web, com conhecimento em JavaScript, HTML, CSS e na utilização da plataforma de desenvolvimento Visual Studio Code (VSCode). Através de cursos, projetos pessoais e muita prática, adquiri um sólido conhecimento em desenvolvimento web e estou ansioso para aplicar essas habilidades em um ambiente profissional. Tenho paixão por criar experiências web interativas e visualmente atraentes.</p> <!-- Fechei corretamente a tag <p> -->
+            </div>
+        </div>
     </section>
 
-</body>
+    <section class="projetos">
+        <div>
+            <h1>Projetos</h1>
 
+
+<div class="card">
+    <p><span>EM PROGRESSO</span></p>
+    <p><span>EM PROGRESSO</span></p>
+    <p><span>EM PROGRESSO</span></p>
+</div>
+
+            </section>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h1>habilidades</h1>
+    </section>
+
+    <script src="main.js"></script>
+</body>
 </html>

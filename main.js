@@ -5,3 +5,4 @@ arrow.addEventListener('click', () => {
     arrow.classList.toggle('rotate');
     dropdownContent.classList.toggle('show');
 });
+

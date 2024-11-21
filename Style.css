@@ -64,14 +64,27 @@
         background-position: -5px -5px;
 
         padding-top: 150px;
+
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin-top: 10rem;
+        position: relative;
     }
     .about{
-        background-color: rgb(58, 55, 55);
-    }
-    .card {
-    
+        width: 100%;
+        height: 100%;
+        margin-top: 4rem;
 
     }
+    .projetos h1{
+        color: aliceblue;
+    }
+    img{
+        width: 230px;
+        height: 550px;
+    }
+
     
       
     /* =============== language ====================== */
@@ -169,3 +182,71 @@
             font-size: 0.9rem;
         }
     }
+
+    /* ======= projetos========= */
+
+
+    .projetos h1{
+        position: relative;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .projetos {
+        margin-top: 5rem;
+    }
+
+.card {
+    width: 400px;
+    height: 254px;
+    border-radius: 4px;
+    background: #212121;
+    display: flex;
+    gap: 5px;
+    padding: .4em;
+    margin-top: 5rem;
+  }
+  
+  .card p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    background: #212121;
+    border: 1px solid #ff5a91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1px;
+  }
+  
+  .card p:hover {
+    flex: 4;
+  }
+  
+  .card p span {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #ff568e;
+    letter-spacing: .1em;
+  }
+  
+  .card p:hover span {
+    transform: rotate(0);
+  }
+
+  /* =========== habilidades ============== */
+
+   .skills h1{
+    color: aliceblue;
+   }
+   .skills {
+    margin-top: 5rem ;
+   }
